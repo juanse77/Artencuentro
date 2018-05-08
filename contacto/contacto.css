@@ -1,0 +1,75 @@
+fieldset{
+	margin: 20px 10%;
+	width: 60%;
+	padding: 20px 50px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #bbbbdd;
+}
+
+address{
+	font-style: normal;
+}
+
+.fila{
+	width: 100%;
+	padding: 8px 0;
+}
+	
+textarea{
+	width: 100%;
+	margin: 8px 0;
+	height: 10em;
+	border: 1px solid black;
+}
+
+label{
+	display: inline-block;
+}
+
+input{
+	float: right;
+	display: inline-block;
+    border: 1px solid black;
+}
+
+input:focus, textarea:focus{
+    background-color: #ddd;
+}
+
+@media screen{
+	input{
+		width: 60%;
+	}
+
+	#enviar{
+		width: auto;
+	}
+
+	#limpiar{
+		width: auto;
+		margin-right: 0.5em;
+	}
+}
+
+@media print{
+	fieldset{
+		width: 90%;
+		margin: 20px 4%;
+		padding: 15px;
+		font-size: 10pt;
+	}
+
+	input{
+		width: 75%;
+		font-size: 10pt;
+	}
+
+	#enviar{
+		display: none;
+	}
+
+	#limpiar{
+		display: none;
+	}
+}

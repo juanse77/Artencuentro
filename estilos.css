@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14pt;
+    background-color: white;
+    border: 1px solid black;
+}
+
+textarea{
+	width: 100%;
+	margin: 8px 0;
+	height: 10em;
+	border: 1px solid black;
+	font-size: 14pt;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.fila{
+	padding: 8px 0;
+	clear: both;
+}
+
+.error-val{
+	clear: both;
+	text-align: right;
+	color: red;
+	padding: 3px;
+	font-size: 80%;
+}
+
+label{
+	margin-right: 0.5em;
+	display: inline-block;
+}
+
+input{
+	float: right;
+	display: inline-block;
+    border: 1px solid black;
+}
+
+input:disabled{
+	color: #333;
+	background-color: #ddd;
+}
+
+input:focus, textarea:focus, select:focus{
+    background-color: #ddd;
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="date"]{
+	font-size: 14pt;
+	width: 60%;
+}
+.main h2 {
+	padding-left: 20px;
+}
+.main p{
+	text-indent: 0;
+	margin: 20px;
+	width: 65%;
+}
+.pequenha{
+	width: 25px;
+}
+
+.error{
+	padding: 5px 20px;
+	font-style: italic;
+	color: red;
+	background-color: #ddd;
+}
+
+select{
+	float: right;
+	display: inline-block;
+    border: 1px solid black;
+    font-size: 14pt;
+	width: 60%;
+}
+
+#btn-limpiar{
+	margin-right: 0.5em;
+}
+
+#errorLogin{
+	padding: 1em;
+	color: #f33;
+	background-color: #ddd;
+}
+
+#errorLogin p{
+	text-align: center;
+	text-indent: 0;
+}
+
+#imagen-trabajo{
+	width: 60%;
+}
+
+#imagen-trabajo-pequenha{
+	width: 8em;
+	float: right;
+}
+
+@media screen{
+	header{
+		margin: 0;
+    	padding: 20px;
+		background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    	overflow: hidden;
+		color: white;
+	}
+
+	fieldset{
+		margin: 20px 10%;
+		width: 60%;
+		padding: 20px 50px;
+		border: 1px solid black;
+		border-radius: 5px;
+		background-color: #ffccb3;
+	}
+
+	.caja-flotante1{
+	    float: right;
+	    border-bottom: 1px solid black;
+	    border-left: 1px solid black;
+	    margin: 0 0 10px 10px;
+	    border-bottom-left-radius: 5px;
+	    padding: 10px;
+	    background-color: #f2f2f2;
+	}
+
+	a:hover{
+		color: black;
+	}
+
+	a:active{
+		color: white;
+	}
+	
+	a:focus{
+	    color: black;
+	}
+	footer a, nav a{
+	    display: flex;
+	    float: left;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+	    padding: 0.6em 0.89em;
+		height: 100%;
+		background-color:  #e6e6e6;
+		-webkit-transition : background-color 1s;
+    	-moz-transition    : background-color 1s;
+    	-o-transition      : background-color 1s;
+    	transition         : background-color 1s;
+	}
+
+	footer a:hover, nav a:hover{
+		background-color: #ff884d;
+		cursor: pointer;
+	}
+	
+	footer a:focus, nav a:focus{
+		background-color: #ff884d;
+	}
+
+	.boton{
+	    padding: 0.2em 1em;
+	    background-color: white;
+	    border: 1px solid black;
+	    border-radius: 5px;
+	    font-size: 14pt;
+	    color: blue;
+		-webkit-transition: background-color 1s;
+    	-moz-transition    : background-color 1s;
+    	-o-transition      : background-color 1s;
+    	transition         : background-color 1s;
+	}
+
+	.boton:hover{
+		background-color: #d9d9d9;
+		cursor: pointer;
+	}
+
+	.boton:focus{
+		background-color: #d9d9d9;
+	}
+}
+
+@media print{
+	body{
+		margin: 5px;
+	}
+
+	header{
+    	margin: 0;
+    	padding: 20px;
+   	}
+
+	.caja-flotante1{
+		display: none;
+	}
+
+	footer a, nav a{
+		display: none;
+	}
+
+	.boton{
+		display: none;
+	}
+
+	fieldset{
+		width: 90%;
+		margin: 20px 4%;
+		padding: 15px;
+		font-size: 10pt;
+	}
+
+	input{
+		width: 75%;
+		font-size: 10pt;
+	}
+}
+
+header h1{
+	margin: 0;
+    padding-left: 35px;
+    font-size: 200%;
+}
+
+h2{
+    margin: 0;
+    font-size: 150%;
+}
+
+h3{
+    margin: 0;
+    font-size: 125%;
+}
+
+.elementos-centrados{
+	width: 100%;
+	text-align: left;
+	display: flex;
+	justify-content: space-around;
+}
+
+.campo{
+	font-size: 14pt;
+}
+
+section{
+    background-color: #ffffff;
+    border-top: 1px solid black;
+    border-bottom: 3px solid white;
+    margin: 0;
+	padding: 20px;
+}
+
+p{
+    margin: 0.5em 0;
+    padding: 0;
+    text-indent: 2em;
+    text-align: left;
+}
+
+.decorada{
+    border: 1px solid black;
+    padding: 3px;
+    background-color: white;
+}
+
+#trademark{
+    font-size: 80%;
+    color:  #ff6600;
+}
+
+#trademark sup{
+	font-size: 60%;
+}
+
+.ancho{
+	width: 40%;
+}
+
+.estrecho{
+	width: 8%;
+}
+
+footer, nav{
+    background-color: #f2f2f2;
+    margin: 0;
+    border-top: 1px solid black;
+    text-align: right;
+    overflow: hidden;
+}
+nav a{
+	float: right;
+}
+/*----------TABLA-PROYECTOS---------*/
+
+#tabla, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+}
+#tabla {
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    padding: 15px;
+	background-color: #ffffff;
+}
+th {
+    background-color:#262626;
+    color: white;
+    padding: 15px;
+}
+th:hover{
+    background-color:#000000;
+    color: white;
+}
+td:hover {
+	background-color: #e6ffff;
+}
+
+td a{
+    text-decoration: none;
+    color: #00cccc;
+	-webkit-transition: all 1s;
+    -moz-transition    : all 1s;
+    -o-transition      : all 1s;
+    transition         : all 1s;
+}
+td a:hover{
+    text-decoration: none;
+    color: #008080;
+}
+
+#h2-tabla{
+    text-align: center;
+}
+.panel{
+    width: 80%;
+    margin: 0 auto;
+}
+.panel.tabla h2{
+	margin-top: 40px;
+}

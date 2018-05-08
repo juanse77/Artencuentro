@@ -1,0 +1,36 @@
+table{
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 0;
+	margin: 10px;
+}
+
+@media print{
+	table{
+		font-size: 10pt;
+	}
+}
+
+th{
+	font-size: 125%;
+	color: black;
+	width: 20em;
+	border: 1px solid black;
+	padding: 0.5em;
+	border-radius: 5px;
+	background-color: #bbbbdd;
+}
+
+td{
+	width: 20em;
+	border: 1px solid black;
+	padding: 0.5em;
+	border-radius: 5px;
+}
+
+.trabajos{
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}

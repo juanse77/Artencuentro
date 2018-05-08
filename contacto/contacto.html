@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Artencuentro: formulario de contacto</title>
+        <link rel="stylesheet" type="text/css" href="../estilos.css" />
+        <link rel="stylesheet" type="text/css" href="contacto.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Artencuentro:</h1>
+            <p>Sitio web dedicado a la intermediación de profesionales dedicados a las artes gráficas.</p>
+        </header>
+
+        <section>
+            <h2>Contacte con nosotros:</h2>
+            
+            <form>
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+
+                    <div class="fila">
+                        <label for="nombre">Nombre:</label>
+                        <input class="campo" type="text" name="nombre" id="nombre" tabindex="1" />
+                    </div>
+                    <div class="fila">
+                        <label for="apellidos">Apellidos:</label>
+                        <input class="campo" type="text" name="apellidos" id="apellidos" tabindex="2" />
+                    </div>
+                    <div class="fila">                    
+                        <label for="direccion">Dirección de correo:</label>
+                		<input class="campo" type="text" name="direccion" id="direccion" tabindex="3" />
+                    </div>
+                    <div class="fila">            		
+                		<label for="asunto">Asunto: </label>
+                		<input class="campo" type="text" name="asunto" id="asunto" tabindex="4" />
+                    </div>
+                    <div class="fila">
+                        <textarea class="campo" name="cuerpo" tabindex="5">Escriba aquí el mensaje</textarea><br>
+                    </div>
+                    <div class="fila">
+                        <input class="boton" id="enviar" type="submit" value="enviar" tabindex="7" />
+                        <input class="boton" id="limpiar" type="reset" value="limpiar" tabindex="6" />
+                    </div>
+                </fieldset>
+            </form>
+            
+			<address>
+				<fieldset>
+					<legend>Datos de contacto</legend>
+					<div class="fila">Dirección: C/ Alcalde Rodríguez nº 15, Telde (Las Palmas, España).</div>
+					<div class="fila">Tel: 9286901234, 601234098.</div>
+					<div class="fila">Email: artencuentro@artencuentro.com.</div>
+				</fieldset>
+			</address>
+			
+        </section>
+
+        <footer>
+            <a href="../index.php">Pág. de inicio</a>
+            <span id="trademark">Arteencuentro<sup>&reg;</sup>: Todos los derechos reservados</span>
+        </footer>
+    </body>
+</html>

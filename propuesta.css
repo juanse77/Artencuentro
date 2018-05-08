@@ -1,0 +1,65 @@
+.ancho{
+	width: 70%;
+}
+
+h2, h3{
+	margin: 0 0 0.5em 0;
+}
+
+h4{
+	font-size: 110%;
+	margin: 0 0 0.5em 0;
+}
+
+#descripcion{
+	margin: 0 0 0.5em 0;
+	font-style: italic;
+}
+
+.mensajes{
+	width: 60%;
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px 0;
+	background-color: #bbd;
+	border-radius: 5px;
+	text-align: left;
+}
+
+.mensaje{
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #ddd;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.resaltado{
+	font-weight: bold;
+}
+
+.fila{
+	margin-bottom: 0.5em;
+	padding: 0;
+	background-color: #ddd;
+	clear: both;
+}
+
+.cuerpo{
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 0.5em;
+}
+
+.fecha{
+	text-align: right;
+}
+
+@media print{
+	.mensajes{
+		width: 90%;
+		font-size: 10pt;
+	}
+}
