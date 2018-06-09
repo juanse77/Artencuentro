@@ -117,8 +117,8 @@ class Validadores{
 			$datos_foto = file_get_contents($imagen['tmp_name']);
 			
 			$fechaMilis = 0;
-        	if(!$fechaMilis = strtotime($datosObraEdit['fecha'])){
-				$fecha = self::pasarFechaNoEuropea($datosObraEdit['fecha']);
+        	if(!$fechaMilis = strtotime($datosObra['fecha'])){
+				$fecha = self::pasarFechaNoEuropea($datosObra['fecha']);
 				$fechaMilis = strtotime($fecha);
 			}
 			
